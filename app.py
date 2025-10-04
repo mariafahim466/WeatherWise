@@ -1,28 +1,19 @@
-from flask import Flask, render_template
-import requests
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
-API_KEY = "d6f4e57cb210cbd8edfd287897dfe058"
 
-@app.route("/")
+# Replace this with your teammates' CSV + LLM code
+def generate_weather_summary(city):
+    # Example placeholder logic
+    return f"WeatherBuddy says: It looks sunny in {city} today! 🌞"
+
+@app.route("/", methods=["GET"])
 def home():
-    # Example location
-    lat = 49.25
-    lon = -123.1
-
-    # Fetch weather forecast
-    url = f"https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API_KEY}&units=metric"
-    data = requests.get(url).json()
-
-    # Take first forecast for simplicity
-    forecast = data['list'][0]
-    weather = {
-        "time": forecast['dt_txt'],
-        "temp": forecast['main']['temp'],
-        "condition": forecast['weather'][0]['description']
-    }
-
-    return render_template("index.html", weather=weather)
+    city = request.args.get("city")
+    summary = None
+    if city:
+        summary = generate_weather_summary(city)
+    return render_template("index.html", summary=summary)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host="0.0.0.0", port=8000)
