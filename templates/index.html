@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WeatherBuddy</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #f0f8ff; }
+        .card { padding: 20px; margin: 50px auto; border-radius: 10px; background: #fff; width: 300px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1 { color: #007acc; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>WeatherBuddy</h1>
+        <p><strong>Time:</strong> {{ weather.time }}</p>
+        <p><strong>Temperature:</strong> {{ weather.temp }} °C</p>
+        <p><strong>Condition:</strong> {{ weather.condition }}</p>
+        <p>🌤 Friendly message: "Perfect time for a walk!"</p>
+    </div>
+</body>
+</html>
