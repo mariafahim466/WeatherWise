@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, timedelta, timezone
 
 # ----- SETTINGS -----
-API_KEY = "d2d03096e391a7efc9987f42e8bd7831"
+API_KEY = "bd40cbb426153984ef74889cfb4a9f59"
 CITY = "Tokyo"  # later set this to dynamic city variable
 
 # ----- GET CURRENT WEATHER -----
