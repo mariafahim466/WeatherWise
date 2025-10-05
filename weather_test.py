@@ -53,4 +53,4 @@ df_forecast = pd.DataFrame(forecast_list)
 df = pd.concat([df_current, df_forecast], ignore_index=True)
 df.to_csv("vancouver_weather.csv", index=False)
 
-print("CSV file 'vancouver_weather.csv' created successfully!")
+#print("CSV file 'vancouver_weather.csv' created successfully!")
