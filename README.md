@@ -21,9 +21,9 @@ WeatherWise is a friendly, interactive web app that provides hourly and daily we
 ```bash
 git clone <your-repo-url>
 cd weatherwise
-
-You should have files app.py, weather_extract.py, weather_ollama.py, index.html (the html file is in the templates folder).
 ```
+You should have files app.py, weather_extract.py, weather_ollama.py, index.html (the html file is in the templates folder).
+
 2. **Create virtual environment:**
 ```bash
 python -m venv venv
