@@ -33,7 +33,6 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 3. **Install required Python libraries:**
-- Make sure you have Python 3.9 or higher installed.
 - Install the Python libraries used in the app:
 
 ```bash
