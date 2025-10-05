@@ -68,6 +68,7 @@ df_forecast = pd.DataFrame(forecast_list)
 
 # ----- COMBINE AND SAVE TO CSV -----
 df = pd.concat([df_current, df_forecast], ignore_index=True)
-df.to_csv(f"{CITY}_weather_with_sun_local.csv", index=False)
+df.to_csv("weather.csv", index=False)
 
 print(f"CSV file 'weather.csv' created successfully!")
+
