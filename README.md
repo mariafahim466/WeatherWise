@@ -23,29 +23,30 @@ git clone <your-repo-url>
 cd weatherwise
 
 You should have files app.py, weather_extract.py, weather_ollama.py, index.html (the html file is in the templates folder).
-
+```
 2. **Create virtual environment:**
-
+```bash
 python -m venv venv
 # On macOS/Linux
 source venv/bin/activate
 # On Windows
 venv\Scripts\activate
-
+```
 3. **Install required Python libraries:**
-
 - Make sure you have Python 3.9 or higher installed.
 - Install the Python libraries used in the app:
 
 ```bash
 pip install pandas flask requests
+```
 
 4. **Install and set up Ollama**:
-
 Download and install Ollama from https://ollama.com/download.
 Make sure the Ollama CLI is accessible in your terminal.
-Pull the LLM model used in this app:
+Pull the LLM model in your terminal used in this app:
+```bash
 ollama pull gemma:2b
+```
 
 5 **Run the flask app in your terminal:**.
 python app.py
