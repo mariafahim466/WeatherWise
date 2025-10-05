@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 
 # ----- SETTINGS -----
-API_KEY = "3adaf830179ed47d5597c340dc46ee25"
+API_KEY = "3adaf830179ed47d5597c340dc46ee25" # enter your own key!!
 CITY = "Coquitlam"
 
 # ----- GET CURRENT WEATHER -----

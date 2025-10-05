@@ -1,11 +1,11 @@
 datetime,type,temp_C,condition,humidity,wind_speed_m_s
-2025-10-04 15:59:40.968175,current,16.37,overcast clouds,76,2.21
+2025-10-04 15:59:40.968175,current,16.37,super rainy,76,2.21
 2025-10-05 00:00:00,forecast,16.07,overcast clouds,76,2.18
 2025-10-05 03:00:00,forecast,15.55,overcast clouds,78,0.53
 2025-10-05 06:00:00,forecast,14.09,broken clouds,82,0.57
 2025-10-05 09:00:00,forecast,13.0,clear sky,83,1.17
 2025-10-05 12:00:00,forecast,10.38,clear sky,74,0.72
-2025-10-05 15:00:00,forecast,10.82,broken clouds,63,1.11
+2025-10-05 15:00:00,forecast,10.82,super rainy,63,1.11
 2025-10-05 18:00:00,forecast,14.26,broken clouds,51,1.39
 2025-10-05 21:00:00,forecast,15.33,few clouds,54,2.16
 2025-10-06 00:00:00,forecast,14.78,scattered clouds,55,1.71
