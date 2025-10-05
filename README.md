@@ -49,4 +49,6 @@ ollama pull gemma:2b
 ```
 
 5 **Run the flask app in your terminal:**.
+```bash
 python app.py
+```
