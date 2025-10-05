@@ -7,7 +7,7 @@
   <style>
     html, body { height: 100%; margin: 0; }
     body {
-      background-image: url('{{ img_url }}'); /* comes from app.py */
+      background-image: url('{{ img_url or "" }}'); /* dynamic background */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -19,6 +19,7 @@
       padding: 32px;
       box-sizing: border-box;
       text-align: center;
+      transition: background-image 0.5s ease; /* smooth change */
     }
     .card {
       width: min(640px, 94vw);
@@ -33,7 +34,7 @@
       color: #2f6df6; 
       font-size: 2rem; 
     }
-    input, button {
+    input, button, select {
       width: 100%; 
       padding: 10px 12px; 
       font-size: 16px;
@@ -59,8 +60,17 @@
   <div class="card">
     <h1>WeatherWise ☀️</h1>
     <form action="/" method="post">
-      <input type="text" name="city" placeholder="Enter your city" required>
-      <input type="number" name="hour" min="0" max="23" placeholder="Enter hour (0–23)" required>
+      <input type="text" name="city" placeholder="Enter your city" value="{{ city or '' }}" required>
+      <input type="number" name="hour" min="0" max="23" placeholder="Enter hour (0–23)" value="{{ request.form.get('hour') or '' }}" required>
+      
+      <!-- Weather selector with retained selection -->
+      <select name="weather_type" required>
+        <option value="sunny" {% if request.form.get('weather_type') == 'sunny' %}selected{% endif %}>Sunny ☀️</option>
+        <option value="rainy" {% if request.form.get('weather_type') == 'rainy' %}selected{% endif %}>Rainy 🌧️</option>
+        <option value="snowy" {% if request.form.get('weather_type') == 'snowy' %}selected{% endif %}>Snowy ❄️</option>
+        <option value="cloudy" {% if request.form.get('weather_type') == 'cloudy' %}selected{% endif %}>Cloudy ☁️</option>
+      </select>
+      
       <button type="submit">Get Weather</button>
     </form>
   </div>
@@ -83,4 +93,3 @@
   {% endif %}
 </body>
 </html>
-

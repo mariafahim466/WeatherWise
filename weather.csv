@@ -1,7 +1,7 @@
 datetime,type,temp_C,condition,humidity,wind_speed_m_s,sunrise_local,sunset_local,hours_of_sunlight
 2025-10-05 10:30:37.999295+00:00,current,24.73,few clouds,68,0.6,2025-10-05 05:38:55+00:00,2025-10-05 17:20:21+00:00,11.690555555555555
 2025-10-05 12:00:00,forecast,26.87,scattered clouds,58,2.96,,,
-2025-10-05 15:00:00,forecast,27.23,scattered clouds,57,4.65,,,
+2025-10-05 15:00:00,forecast,27.23,super rainy and snowy,57,4.65,,,
 2025-10-05 18:00:00,forecast,26.6,broken clouds,64,4.71,,,
 2025-10-05 21:00:00,forecast,25.71,light rain,72,5.51,,,
 2025-10-06 00:00:00,forecast,25.36,broken clouds,70,3.99,,,
