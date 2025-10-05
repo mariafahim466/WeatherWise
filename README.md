@@ -52,3 +52,4 @@ ollama pull gemma:2b
 ```bash
 python app.py
 ```
+Open your browser and go to http://127.0.0.1:5000/. Enter your city and the hour for the forecast. Receive a customized message with a weather summary and advice!
